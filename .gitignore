@@ -1,0 +1,4 @@
+.DS_Store
+.idea
+maven-git-hooks.iml
+target

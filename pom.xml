@@ -8,6 +8,19 @@
     <artifactId>maven-git-hooks</artifactId>
     <version>1.0.0</version>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>https://nexus-craigmiller160.ddns.net/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshot</name>
+            <url>https://nexus-craigmiller160.ddns.net/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>

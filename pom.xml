@@ -6,7 +6,7 @@
 
     <groupId>io.craigmiller160</groupId>
     <artifactId>maven-git-hooks</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <distributionManagement>
         <repository>

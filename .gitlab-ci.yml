@@ -1,0 +1,29 @@
+spec:
+  inputs:
+    build_type:
+      type: string
+      default: pre-release
+      options:
+        - pre-release
+        - release
+        - integration
+    release_version:
+      type: string
+      default: 0.0.0
+      regex: (major|minor|patch|self|(^\d+\.\d+\.\d+))
+---
+include:
+  - component: $CI_SERVER_FQDN/craigmiller1601/craig-ci/java-maven@v2
+    inputs:
+      build_type: $[[ inputs.build_type ]]
+      release_version: $[[ inputs.release_version ]]
+      use_tests: false
+      use_publish_artifact: true
+
+stages:
+  - Preflight
+  - Prepare Release
+  - Build
+  - Validate
+  - Publish
+  - Finalize Release

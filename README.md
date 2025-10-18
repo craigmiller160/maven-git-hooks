@@ -17,7 +17,7 @@ Include in a consuming project with this plugin:
     <version>3.3.0</version>
     <configuration>
         <installHooks>
-            <pre-commit>classpath/path/to/file</pre-commit>
+            <pre-commit>spotless-apply</pre-commit>
         </installHooks>
     </configuration>
     <executions>

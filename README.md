@@ -29,7 +29,7 @@ Include in a consuming project with this plugin:
     </executions>
     <dependencies>
         <dependency>
-            <groupId>io.craigmiller160</groupId>
+            <groupId>us.craigmiller160</groupId>
             <artifactId>maven-git-hooks</artifactId>
             <version>${git.hooks.version}</version>
         </dependency>
